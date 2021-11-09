@@ -46,13 +46,14 @@ function setup() {
     const numbers = tablenum.getNum(i, 'Number');
     const x = random(100, width-200);
     const y = random(400, height-200);
-    const size = map(numbers, 0, 4000, 0, 500);
+    const size = map(numbers, 0, 3500, 0, 500);
     const fillcolorR = random(50, 255);
     const fillcolorG = random(50, 255);
-    const fillcolorB = random(50, 255);
+    const fillcolorB = random(50, 555);
     fill(fillcolorR, fillcolorG, fillcolorB);
     noStroke();
     ellipse(x, y, size);
+    textSize(16);
     text(noise, x, y + size / 2 + 10);
   }
 
