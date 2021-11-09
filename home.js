@@ -47,9 +47,9 @@ function setup() {
     const x = random(100, width-200);
     const y = random(400, height-200);
     const size = map(numbers, 0, 4000, 0, 500);
-    const fillcolorR = random(0, 255);
-    const fillcolorG = random(0, 255);
-    const fillcolorB = random(0, 255);
+    const fillcolorR = random(50, 255);
+    const fillcolorG = random(50, 255);
+    const fillcolorB = random(50, 255);
     fill(fillcolorR, fillcolorG, fillcolorB);
     noStroke();
     ellipse(x, y, size);
